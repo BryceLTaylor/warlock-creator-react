@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./header.jsx";
-import Creator from './Creator.js';
+import Header from "../header/Header.jsx";
+import Creator from '../creator/Creator.js';
 
 const Page = (props) => (
   <div>
