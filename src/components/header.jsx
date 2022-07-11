@@ -1,16 +1,10 @@
 import React from 'react';
+const Header = (props) => (
+  <div
+    className = 'header'
+  >
+    <h1>Warlock Creator</h1>
+  </div>
+);
 
-class Header extends React.Component{
-  constructor (props) {
-    super(props);
-    this.state = {};
-  };
-  render () {
-    return (
-      <div>
-        <h1>Warlock Creator</h1>
-        </div>
-    )
-  };
-};
 export default Header;

@@ -1,17 +1,11 @@
 import React from "react";
 import Header from "./header.jsx";
+import Creator from './Creator.js';
 
-class Page extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {};
-  };
-  render () {
-    return (
-      <div>
-        <Header />
-      </div>
-    );
-  };
-}
+const Page = (props) => (
+  <div>
+    <Header />
+  </div>
+)
+
 export default Page;
