@@ -1,0 +1,8 @@
+.warlockInfo {
+    background-color: lightGray;
+    padding-left: 10px;
+    border-width: 5px;
+    border-color: red;
+    width: 75%;
+    height: 100%;
+  }

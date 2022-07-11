@@ -1,0 +1,8 @@
+.creator {
+    position: relative;
+    background-color: lightYellow;
+    display: flex;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+  }

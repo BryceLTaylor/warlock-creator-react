@@ -1,4 +1,5 @@
 import React from 'react';
+import './Warlock.css';
 
 const Warlock = (props) => (
     <div

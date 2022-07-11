@@ -1,0 +1,8 @@
+.infoPanel {
+    padding-left: 10px;
+    border-width: 5px;
+    border-color: red;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+  }

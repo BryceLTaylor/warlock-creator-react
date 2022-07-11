@@ -1,4 +1,5 @@
 import React from 'react';
+import './InfoPanel.css';
 
 const InfoPanel = (props) => (
     <div

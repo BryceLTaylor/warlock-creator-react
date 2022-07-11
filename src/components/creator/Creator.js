@@ -1,6 +1,7 @@
 import React from 'react';
 import Warlock from '../warlock/Warlock.js';
 import InfoPanel from '../infoPanel/InfoPanel.js';
+import './Creator.css';
 
 const Creator = (props) => (
     <div
