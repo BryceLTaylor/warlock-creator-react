@@ -1,0 +1,22 @@
+.stat {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.stat-name {
+    font-size: 2em;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 3em;
+    text-align: center;
+    /* height: 2px; */
+    padding-top: 0px;
+}

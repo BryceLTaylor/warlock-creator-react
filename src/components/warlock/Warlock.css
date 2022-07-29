@@ -1,8 +1,14 @@
-.warlockInfo {
+.warlock-info {
     background-color: lightGray;
     padding-left: 10px;
     /* border: 5px solid red; */
     width: 75%;
     height: 100%;
     /* margin: 10px 10px; */
+  }
+
+  .stat-container {
+    display: flex;
+    justify-content: space-around;
+    
   }
