@@ -1,0 +1,23 @@
+{
+  "statNamesLong" : ["Strength", "Dexterity", "Constitution","Intelligence", "Wisdom", "Charisma"],
+  "statNames" : ["str", "dex", "con", "int", "wis", "cha"],
+  "defaultOrder" : ["cha", "dex", "con", "wis", "int", "str"],
+  "level1": {
+    "name": [
+      "Steve",
+      "Balthazar the Destroyer",
+      "Arnold",
+      "Caliope",
+      "Jane",
+      "Gloria"
+    ],
+    "stats": {
+      "str": [7, 18],
+      "dex": [10, 18],
+      "con": [7, 18],
+      "int": [7, 16],
+      "wis": [7, 16],
+      "cha": [14, 18]
+    }
+  }
+}
