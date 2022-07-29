@@ -1,8 +1,21 @@
-.infoPanel {
+.info-panel {
     padding-left: 10px;
     border-width: 5px;
     border-color: red;
     width: 25%;
     height: 100%;
     background-color: white;
+    position: relative;
+  }
+
+  .info-panel-title {
+    text-align: center;
+    position: relative;
+  }
+
+  .stat-preferences {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
