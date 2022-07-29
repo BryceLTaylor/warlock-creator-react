@@ -8,6 +8,9 @@ const Warlock = (props) => (
     >
         <p>Info for the generated warlock</p>
         <h1 className='warlockName'>{props.name}</h1>
+        <div className='statContainer'>
+
+        </div>
     </div>
 );
 
