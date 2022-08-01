@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Warlock from '../warlock/Warlock.js';
 import InfoPanel from '../infoPanel/InfoPanel.js';
 import './Creator.css';
-import {getRandomName, defaultOrder, statNames, rollAllStats } from '../../warlockCreate.js';
+import {getRandomName, defaultOrder, statNames, rollAllStats, orderStats } from '../../warlockCreate.js';
 
 const Creator = (props) => {
     const [statPreferenceOrder, setPreferenceOrder] = React.useState(defaultOrder);
@@ -23,7 +23,7 @@ const Creator = (props) => {
             tempPriorityList[currentIndex + 1] = stat;
         }
         setPreferenceOrder([...tempPriorityList]);
-        console.log(statPreferenceOrder);
+        // console.log(statPreferenceOrder);
     }
     
     useEffect( () => {
@@ -34,10 +34,13 @@ const Creator = (props) => {
         setStats(rollAllStats(statPreferenceOrder));
     };
 
+    function reorderStats () {
+        setStats(orderStats(stats, statPreferenceOrder));
+    };
+
     useEffect( () => {
         rollStats();
-    }, [])
-
+    }, []);
 
     return (
     <div
@@ -52,6 +55,8 @@ const Creator = (props) => {
         <InfoPanel 
             preferenceOrder={statPreferenceOrder}
             changeStatPriority={changeStatPriority}
+            reorderStats={reorderStats}
+            rollStats={rollStats}
 
         />
     </div>

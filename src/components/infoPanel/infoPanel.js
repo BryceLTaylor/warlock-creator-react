@@ -9,6 +9,16 @@ const InfoPanel = (props) => {
         id = 'info-panel'
     > 
         <h1 className='info-panel-title'>Info Panel</h1>
+        <button
+            onClick={() => props.reorderStats() }
+        >
+            Update Stats
+        </button>
+        <button
+            onClick={() => props.rollStats() }
+        >
+            Reroll Stats
+        </button>
         <div
             className = 'stat-preferences'
         >

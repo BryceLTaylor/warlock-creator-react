@@ -36,14 +36,20 @@ function rollAllStats (statPreferences) {
         statValues.push(rollStat() );
         stats.push(0);
     }
-    statValues.sort((a,b) => b - a);
-    let valueIndex;
-
-    for (let j = 0; j < statNames.length; j++) {
-        valueIndex = statPreferences.indexOf(statNames[j]);
-        stats[j] = statValues[valueIndex];
-    }
+    stats = orderStats(statValues, statPreferences);
     return stats;
+}
+
+function orderStats (stats, statPreferences) {
+    stats.sort((a,b) => b - a);
+    let valueIndex;
+    let tempStats = [...stats];
+
+    for (let i = 0; i < statNames.length; i++) {
+        valueIndex = statPreferences.indexOf(statNames[i]);
+        tempStats[i] = stats[valueIndex];
+    }
+    return tempStats;
 }
 // getOptions();
 // console.log(getRandomName());
@@ -52,6 +58,7 @@ export {
     rollStat,
     getRandomName,
     getOptions,
+    orderStats,
     rollAllStats,
     statNames,
     statNamesLong,
